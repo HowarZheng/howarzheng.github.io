@@ -12,7 +12,7 @@ tags:
   - theme
 ---
 
-这里是我的个人博客，通过 GitHub 管理与构建。
+这里是我的个人博客，通过 GitHub 管理与构建。帅哥一枚。
 
 
 ## Contact
