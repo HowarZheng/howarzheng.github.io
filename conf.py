@@ -3,7 +3,7 @@
 """
 
 # For Maverick
-site_prefix = "//"
+site_prefix = "/"
 source_dir = "../src/"
 build_dir = "../dist/"
 index_page_size = 10
@@ -16,7 +16,7 @@ template = {
 }
 enable_jsdelivr = {
     "enabled": True,
-    "repo": "HowarZheng/wiki@gh-pages"
+    "repo": "HowarZheng/howarzheng.github.io@master"
 }
 
 # 站点设置
@@ -62,7 +62,7 @@ nav = [
 social_links = [
     {
         "name": "GitHub",
-        "url": "https://github.com/AlanDecode",
+        "url": "https://github.com/HowarZheng",
         "icon": "gi gi-github"
     }
 ]
