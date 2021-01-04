@@ -16,13 +16,13 @@ template = {
 }
 enable_jsdelivr = {
     "enabled": True,
-    "repo": "HowarZheng/Blog-With-GitHub-Boilerplate@gh-pages"
+    "repo": "HowarZheng/wiki@gh-pages"
 }
 
 # 站点设置
 site_name = "HowarZheng Wiki"
 site_logo = "${static_prefix}logo.png"
-site_build_date = "2019-12-18T16:51+08:00"
+site_build_date = "2020-01-03T16:51+08:00"
 author = "HowarZheng"
 email = "howar.zheng@gmail.com"
 author_homepage = "https://www.howarzheng.com"
@@ -61,19 +61,9 @@ nav = [
 
 social_links = [
     {
-        "name": "Twitter",
-        "url": "https://twitter.com/AlanDecode",
-        "icon": "gi gi-twitter"
-    },
-    {
         "name": "GitHub",
         "url": "https://github.com/AlanDecode",
         "icon": "gi gi-github"
-    },
-    {
-        "name": "Weibo",
-        "url": "https://weibo.com/5245109677/",
-        "icon": "gi gi-weibo"
     }
 ]
 
