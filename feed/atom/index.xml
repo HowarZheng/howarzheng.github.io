@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/</id><title>HowarZheng Wiki</title><updated>2021-01-04T05:18:41.032202+08:06</updated><author><name>HowarZheng</name><email>howar.zheng@gmail.com</email></author><link href="/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>https://cdn.jsdelivr.net/gh/HowarZheng/howarzheng.github.io@master/logo.png</logo><subtitle>技术改变世界，理论改变世界观。</subtitle><entry><id>/archives/看文献，这些Chrome插件少不了/</id><title>看文献，这些Chrome插件少不了</title><updated>2021-01-04T05:18:41.032289+00:00</updated><author><name>HowarZheng</name><email>howar.zheng@gmail.com</email><uri>https://www.howarzheng.com</uri></author><content>&lt;p&gt;看文献，早已成为了研究生的日常，如何更高效的筛选和阅读文献呢？这里分享一些我自己常用的插件。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/</id><title>HowarZheng Wiki</title><updated>2021-01-04T06:58:13.552862+08:06</updated><author><name>HowarZheng</name><email>howar.zheng@gmail.com</email></author><link href="/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>https://cdn.jsdelivr.net/gh/HowarZheng/howarzheng.github.io@master/logo.png</logo><subtitle>技术改变世界，理论改变世界观。</subtitle><entry><id>/archives/看文献，这些Chrome插件少不了/</id><title>看文献，这些Chrome插件少不了</title><updated>2021-01-04T06:58:13.553005+00:00</updated><author><name>HowarZheng</name><email>howar.zheng@gmail.com</email><uri>https://www.howarzheng.com</uri></author><content>&lt;p&gt;看文献，早已成为了研究生的日常，如何更高效的筛选和阅读文献呢？这里分享一些我自己常用的插件。&lt;/p&gt;
 &lt;h2&gt;1， Scholarscope&lt;/h2&gt;
 &lt;p&gt;这是我最喜欢的一个插件，使用它之后可以查看Pubmed检索的文献的影响因子、引用数量以及中科院分区。
 &lt;figure&gt;&lt;img data-width="720" data-height="378" src="https://cdn.jsdelivr.net/gh/hunterstreet/howarzhengblogattachments/img/20200628161132.png#vwid=720&amp;vhei=378" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -26,4 +26,27 @@
 &lt;p&gt;检查英文输入是否符合语法、词语搭配推荐。&lt;/p&gt;
 &lt;h2&gt;10，AdBlock&lt;/h2&gt;
 &lt;p&gt;广告屏蔽插件，可以屏蔽掉所有谷歌广告、百度广告等等。&lt;/p&gt;
-</content><link href="/archives/看文献，这些Chrome插件少不了/" rel="alternate"/><published>2019-12-18T16:50:00+08:06</published></entry></feed>
+</content><link href="/archives/看文献，这些Chrome插件少不了/" rel="alternate"/><published>2019-12-18T16:50:00+08:06</published></entry><entry><id>/archives/本地Linux使用Blast/</id><title>本地Linux使用Blast</title><updated>2021-01-04T06:58:13.552945+00:00</updated><author><name>HowarZheng</name><email>howar.zheng@gmail.com</email><uri>https://www.howarzheng.com</uri></author><content>&lt;h1&gt;【Linux】本地Linux使用Blast&lt;/h1&gt;
+&lt;h2&gt;第一步：下载Blast&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;wget ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.8.1+-x64-linux.tar.gz
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;第二步：解压缩&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;tar -zxvf ncbi-blast-2.8.1+-x64-linux.tar.gz
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;第三步：移动目录，改名&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mv ncbi-blast-2.8.1+ /home/xizheng/local/app/ &lt;span class="c1"&gt;# 移动&lt;/span&gt;
+&lt;span class="nb"&gt;cd&lt;/span&gt; /home/xizheng/local/app/                    &lt;span class="c1"&gt;# 进入本地程序安装路径&lt;/span&gt;
+mv cbi-blast-2.8.1+ blast        &lt;span class="c1"&gt;# 修改目录名&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;设置环境变量&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;将BLAST+可执行程序所在目录（bin）的绝对路径加入到环境变量$PATH中，方便通过程序名直接调用。&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;export PATH=/home/xizheng/local/app/blast/bin:\$PATH&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; ~/.bashrc
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;让配置生效&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;source&lt;/span&gt; ~/.bashrc
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;到此，本地blast安装完毕，可以利用blast的子程序了。输入 blastn -version试试:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;blastn: &lt;span class="m"&gt;2&lt;/span&gt;.8.1+
+ Package: blast &lt;span class="m"&gt;2&lt;/span&gt;.8.1, build Nov &lt;span class="m"&gt;26&lt;/span&gt; &lt;span class="m"&gt;2018&lt;/span&gt; &lt;span class="m"&gt;11&lt;/span&gt;:55:45
+&lt;/pre&gt;&lt;/div&gt;
+</content><link href="/archives/本地Linux使用Blast/" rel="alternate"/><published>2020-12-31T16:50:00+08:06</published></entry></feed>
