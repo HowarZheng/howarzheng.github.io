@@ -4,19 +4,17 @@ title: 关于
 slug: about
 date: 2017/06/28 17:26:00
 status: publish
-author: AlanDecode
+author: HowarZheng
 categories: 
-  - Maverick
-  - Dev
+  - 关于
 tags: 
-  - theme
+  - 自我介绍
+  - 简历
 ---
 
-这里是我的个人博客，通过 GitHub 管理与构建。帅哥一枚。
+这里是我的个人wiki。
 
 
 ## Contact
 
-Email: hi#imalan.cn (replace # with @)
-
-Telegram：[AlanDecode](https://t.me/alandecode)
+Email: howar.zheng#gmail.com(replace # with @)
